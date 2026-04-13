@@ -30,6 +30,76 @@ Do NOT use for timezone info -- use utility_convert_timezone instead. Do NOT use
         },
         required: [],
       },
+      outputSchema: {
+          "type": "object",
+          "properties": {
+            "location": {
+              "type": "object",
+              "properties": {
+                "latitude": {
+                  "type": "number"
+                },
+                "longitude": {
+                  "type": "number"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "timezone": {
+                  "type": "string"
+                }
+              }
+            },
+            "current": {
+              "type": "object",
+              "properties": {
+                "temperature": {
+                  "type": "number",
+                  "description": "Current temperature"
+                },
+                "humidity": {
+                  "type": "number",
+                  "description": "Relative humidity %"
+                },
+                "windSpeed": {
+                  "type": "number",
+                  "description": "Wind speed"
+                },
+                "condition": {
+                  "type": "string",
+                  "description": "Weather condition"
+                }
+              }
+            },
+            "forecast": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "date": {
+                    "type": "string"
+                  },
+                  "tempMax": {
+                    "type": "number"
+                  },
+                  "tempMin": {
+                    "type": "number"
+                  },
+                  "precipitation": {
+                    "type": "number"
+                  },
+                  "condition": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "required": [
+            "location",
+            "current"
+          ]
+        },
     },
   ],
 };
