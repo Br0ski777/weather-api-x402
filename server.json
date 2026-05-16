@@ -12,7 +12,7 @@
   "remotes": [
     {
       "type": "sse",
-      "url": "https://weather-api-x402-production.up.railway.app/mcp"
+      "url": "https://weather-api.api.klymax402.com/mcp"
     }
   ]
 }
