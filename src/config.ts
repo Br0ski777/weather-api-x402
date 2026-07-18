@@ -9,7 +9,7 @@ export const API_CONFIG: ApiConfig = {
     {
       method: "POST",
       path: "/api/weather",
-      price: "$0.001",
+      price: "$0.003",
       description: "Get current weather and forecast for a location",
       toolName: "data_get_weather",
       toolDescription: `Use this when you need current weather conditions or a 7-day forecast for any location. Returns weather data in JSON.
