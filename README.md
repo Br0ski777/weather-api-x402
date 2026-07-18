@@ -37,7 +37,7 @@ Any x402-aware client ([`@x402/fetch`](https://www.npmjs.com/package/@x402/fetch
 
 | Tool | Method | Path | Price | Description |
 |---|---|---|---|---|
-| `data_get_weather` | POST | `/api/weather` | $0.001 | Get current weather and forecast for a location |
+| `data_get_weather` | POST | `/api/weather` | $0.003 | Get current weather and forecast for a location |
 
 ### `data_get_weather`
 
